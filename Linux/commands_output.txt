@@ -1,0 +1,58 @@
+=== ls -la ~ ===
+total 64
+drwxr-x--- 7 tisya tisya 4096 Nov 28 04:04 .
+drwxr-xr-x 3 root  root  4096 Oct 29 03:45 ..
+-rw------- 1 tisya tisya 1983 Nov 28 03:53 .bash_history
+-rw-r--r-- 1 tisya tisya  220 Oct 29 03:45 .bash_logout
+-rw-r--r-- 1 tisya tisya 3771 Oct 29 03:45 .bashrc
+drwxr-x--- 4 tisya tisya 4096 Oct 29 03:46 .cache
+drwxr-x--- 3 tisya tisya 4096 Oct 29 03:46 .config
+-rw------- 1 tisya tisya   80 Nov 28 04:04 .git-credentials
+-rw-r--r-- 1 tisya tisya   82 Nov 28 03:54 .gitconfig
+drwxr-xr-x 2 tisya tisya 4096 Oct 29 03:46 .landscape
+drwx------ 3 tisya tisya 4096 Nov  4 04:14 .local
+-rw-r--r-- 1 tisya tisya    0 Nov 28 03:07 .motd_shown
+-rw-r--r-- 1 tisya tisya  807 Oct 29 03:45 .profile
+drwxr-xr-x 8 tisya tisya 4096 Nov 28 03:44 DeveloperPortfolio
+-rw-r--r-- 1 tisya tisya  303 Nov  5 09:10 condition.sh
+-rw-r--r-- 1 tisya tisya  148 Nov  4 04:38 loops.sh
+-rw-r--r-- 1 tisya tisya  131 Nov 13 13:17 student_introduction
+
+=== ps aux | head -10 ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.4  24276 15336 ?        Ss   03:36   0:01 /sbin/init
+root           2  0.0  0.0   3820  2520 hvc0     Sl+  03:36   0:00 /init
+root           3  0.0  0.0   3680  2224 hvc0     S+   03:36   0:00 init-watcher
+root           7  0.0  0.0   3820  2292 hvc0     Sl+  03:36   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          50  0.0  0.6  58836 24628 ?        S<s  03:36   0:00 /usr/lib/systemd/systemd-journald
+systemd+      83  0.0  0.3  22416 14508 ?        Ss   03:36   0:00 /usr/lib/systemd/systemd-resolved
+root          92  0.0  0.3  34732 12032 ?        Ss   03:36   0:00 /usr/lib/systemd/systemd-udevd
+root         118  0.0  0.0   2888  2016 ?        Ss   03:36   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         124  0.0  0.0   4472  3176 ?        Ss   03:36   0:00 /usr/sbin/cron -f -P
+
+=== df -h ===
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         476G  190G  287G  40% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.4G  955G   1% /
+none            1.9G   36K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  3.4M  1.9G   1% /init
+none            1.9G  500K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   80K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   80K  1.9G   1% /mnt/wslg/doc
+C:\             476G  190G  287G  40% /mnt/c
+tmpfs           1.9G     0  1.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           375M   12K  375M   1% /run/user/1000
+
+=== free -h ===
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       390Mi       3.1Gi       4.1Mi       257Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
