@@ -1,13 +1,13 @@
 === ls -la ~ ===
 total 64
-drwxr-x--- 7 tisya tisya 4096 Nov 28 04:09 .
+drwxr-x--- 7 tisya tisya 4096 Nov 28 04:14 .
 drwxr-xr-x 3 root  root  4096 Oct 29 03:45 ..
 -rw------- 1 tisya tisya 1983 Nov 28 03:53 .bash_history
 -rw-r--r-- 1 tisya tisya  220 Oct 29 03:45 .bash_logout
 -rw-r--r-- 1 tisya tisya 3771 Oct 29 03:45 .bashrc
 drwxr-x--- 4 tisya tisya 4096 Oct 29 03:46 .cache
 drwxr-x--- 3 tisya tisya 4096 Oct 29 03:46 .config
--rw------- 1 tisya tisya   80 Nov 28 04:09 .git-credentials
+-rw------- 1 tisya tisya   80 Nov 28 04:14 .git-credentials
 -rw-r--r-- 1 tisya tisya   82 Nov 28 03:54 .gitconfig
 drwxr-xr-x 2 tisya tisya 4096 Oct 29 03:46 .landscape
 drwx------ 3 tisya tisya 4096 Nov  4 04:14 .local
@@ -54,5 +54,5 @@ tmpfs           375M   12K  375M   1% /run/user/1000
 
 === free -h ===
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       385Mi       3.1Gi       4.1Mi       257Mi       3.3Gi
+Mem:           3.7Gi       383Mi       3.1Gi       4.1Mi       257Mi       3.3Gi
 Swap:          1.0Gi          0B       1.0Gi
